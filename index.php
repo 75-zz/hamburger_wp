@@ -1,40 +1,53 @@
 <?php get_header(); ?>
-<div class="l-hero-archive">
-    <h1 class="p-hero-archive__title">Menu:<span>チーズバーガー</span></h1>
+<div class="l-hero">
+    <h2 class="p-hero__title">ダミーサイト</h2>
 </div>
-<section class="p-content-archive">
-    <h2>小見出しが入ります</h2>
-    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+<section class="p-branch-contents">
 
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <article class="c-cards">
-                        <?php if (has_post_thumbnail()) : ?>
-                            <img class="blog-item__thumbnail-image" src="<?php the_post_thumbnail_url('large'); ?>">
-                        <?php endif; ?>
-                    <div class="c-cards__textarea">
-                        <h3><?php the_title(); ?></h3>
-                        <h4><?php the_excerpt(); ?></h4>
-                        <p><?php the_content('',FALSE,''); ?></p>
-                        <button><a href="<?php the_permalink(); ?>">詳しく見る</a> </button>
-                    </div>
-                </article>
-    <?php endwhile;
-    endif; ?>
 
+    <div class="p-branch-wrapper">
+    <a href="<?php echo get_page_link(64); ?>">
+    <article class="c-branch__card p-takeout">
+            <h3>Take Out</h3>
+
+            <div class="c-branch__textarea">
+                <dl>
+                    <dt>小見出しが入ります</dt>
+                    <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>小見出しが入ります</dt>
+                    <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </dd>
+                </dl>
+            </div>
+            </article></a>
+            <a href="<?php echo get_page_link(66); ?>">
+        <article class="c-branch__card p-eatin">
+            <h3>Eat In</h3>
+            <div class="c-branch__textarea">
+                <dl>
+                    <dt>小見出しが入ります</dt>
+                    <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>小見出しが入ります</dt>
+                    <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </dd>
+                </dl>
+            </div>
+        </article></a>
+    </div>
 </section>
-<section class="c-pagination">
-    <p>page 1/10</p>
-    <ul>
-        <li class="active">1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        <li>8</li>
-        <li>9</li>
-    </ul>
+<section class="p-map">
+    <article class="p-map-direction">
+        <h3>見出しが入ります</h3>
+        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+        </p>
+    </article>
+    <img src="img/map.png" alt="周辺MAP">
 </section>
 </main>
 <?php get_sidebar(); ?>
