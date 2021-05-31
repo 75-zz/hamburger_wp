@@ -40,14 +40,3 @@ function post_has_archive($args, $post_type)
     return $args;
 }
 add_filter('register_post_type_args', 'post_has_archive', 10, 2);
-
-
-function post_category_takeout($args, $post_type)
-{
-    if ('post' == $post_type) {
-        $args['rewrite'] = true; // リライトを有効にする
-        $args['has_category-take_out'] = 'takeout'; // 任意のスラッグ名
-    }
-    return $args;
-}
-add_filter('register_post_type_args', 'post_has_archive', 10, 2);
