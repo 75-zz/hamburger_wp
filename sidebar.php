@@ -4,7 +4,15 @@
                     </div>
                     <nav>
                         <ul>
-                            <li>バーガー
+                        
+                        <?php
+                        $args =array(
+                            'title_li' => '',
+                            'exclude' => '2,3',
+                        );
+                        wp_list_categories( $args );
+                        ?>
+                            <!-- <li>バーガー
                                 <ul>
                                     <li><a href="#">ハンバーガー</a></li>
                                     <li><a href="#">チーズバーガー</a></li>
@@ -32,7 +40,7 @@
                                     <li><a href="#">紅茶（Ice/Hot）</a></li>
                                     <li><a href="#">コーヒー（Ice/Hot）</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                         </ul>
                     </nav>
                     <div class="overlay"></div>
