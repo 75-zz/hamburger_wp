@@ -5,13 +5,7 @@
                     <nav>
                         <ul>
                         
-                        <?php
-                        $args =array(
-                            'title_li' => '',
-                            'exclude' => '2,3',
-                        );
-                        wp_list_categories( $args );
-                        ?>
+                        <?php wp_nav_menu( $args ); ?>
                             <!-- <li>バーガー
                                 <ul>
                                     <li><a href="#">ハンバーガー</a></li>
