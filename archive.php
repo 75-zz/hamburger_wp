@@ -1,6 +1,9 @@
 <?php get_header("archive"); ?>
 <div class="l-hero-archive">
-    <h1 class="p-hero-archive__title">Menu:<span>チーズバーガー</span></h1>
+
+
+<?php echo "<h1 class='p-hero-archive__title'>". get_the_archive_title() . "</h1>"; ?>
+
 </div>
 <section class="p-content-archive">
     <h2>小見出しが入ります</h2>
