@@ -1,9 +1,17 @@
 <?php get_header(); ?>
 <div class="l-hero-single p-single-hero">
-    <h1 class="p-single__title">h1 チーズバーガー</h1>
+
+<?php echo "<h1 class='p-single__title'>". get_the_title() . "</h1>"; ?>
+
+
 </div>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div class="p-single-wrapper">
-    <section class="c-single-text">
+
+<?php the_content(); ?>
+
+<?php /* ?>
+   <section class="c-single-text">
         <h2>見出しh2</h2>
         <p>Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
         </p>
@@ -105,7 +113,11 @@
     </section>
     <button class="c-button">ボタン</button>
     <p class="c-bold">boldboldboldboldboldboldbold</p>
+   <?php */ ?>
 </div>
+<?php endwhile; ?>
+<?php endif; ?>
+
 </main>
 <?php get_sidebar(); ?>
 </div>
