@@ -787,6 +787,9 @@ line-height: 1;
   margin: 0 15px;
   position: relative;
 }
+.p-footer ul li a{
+  color: #fff;
+}
 
 .p-footer ul li:first-child::after {
   background-color: #fff;

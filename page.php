@@ -1,33 +1,14 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburger</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/app.css">
-
-</head>
-
-<body>
-    <div class="l-wrapper">
-        <div class="l-container">
-            <main class="l-main">
-                <header class="l-header">
-                    <div class="p-header">
-                        <p class="p-header__logo">Hamburger</p>
-                        <form action="#" method="post" class="p-search-form">
-                            <input type="search" name="s" value="" placeholder="&#xf002" class="p-search-form__keyword">
-                            <input type="submit" value="検索" class="p-search-form__submit">
-                        </form>
-                    </div>
-                </header>
+<?php get_header(); ?>
                 <div class="l-hero-single p-page-hero">
-                    <h1 class="p-page__title">ショップについて</h1>
+                <?php echo "<h1 class='p-page__title'>". get_the_title() . "</h1>"; ?>
+
                 </div>
-                <div class="p-single-wrapper">
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<div class="p-single-wrapper">
+
+<?php the_content(); ?>
+
+<?php /* ?>
                     <section class="c-single-text">
                         <h2>見出しh2</h2>
                         <p>Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
@@ -131,60 +112,12 @@
                     </section>
                     <button class="c-button">ボタン</button>
                     <p class="c-bold">boldboldboldboldboldboldbold</p>
+                    <?php */ ?>
                 </div>
-            </main>
-            <aside class="l-sidebar">
-                <div class="wrapper">
-                    <div class="menu-trigger">
-                    </div>
-                    <nav>
-                        <ul>
-                            <li>バーガー
-                                <ul>
-                                    <li><a href="#">ハンバーガー</a></li>
-                                    <li><a href="#">チーズバーガー</a></li>
-                                    <li><a href="#">テリヤキバーガー</a></li>
-                                    <li><a href="#">アボカドバーガー</a></li>
-                                    <li><a href="#">フィッシュバーガー</a></li>
-                                    <li><a href="#">ベーコンバーガー</a></li>
-                                    <li><a href="#">チキンバーガー</a></li>
-                                </ul>
-                            </li>
-                            <li>サイド
-                                <ul>
-                                    <li><a href="#">ポテト</a></li>
-                                    <li><a href="#">サラダ</a></li>
-                                    <li><a href="#">ナゲット</a></li>
-                                    <li><a href="#">コーン</a></li>
-                                </ul>
-                            </li>
-                            <li>ドリンク
-                                <ul>
-                                    <li><a href="#">コーラ</a></li>
-                                    <li><a href="#">ファンタ</a></li>
-                                    <li><a href="#">オレンジ</a></li>
-                                    <li><a href="#">アップル</a></li>
-                                    <li><a href="#">紅茶（Ice/Hot）</a></li>
-                                    <li><a href="#">コーヒー（Ice/Hot）</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="overlay"></div>
-                </div>
-            </aside>
-            <div class="overlay"></div>
-        </div>
-        <footer class="l-footer p-footer">
-            <ul>
-                <li>ショップ情報</li>
-                <li>ヒストリー</li>
-            </ul>
-            <small>Copyright: RaiseTech</small>
-        </footer>
-    </div>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/drawer_menu.js"></script>
-</body>
+                <?php endwhile; ?>
+<?php endif; ?>
 
-</html>
+</main>
+<?php get_sidebar(); ?>
+</div>
+<?php get_footer(); ?>

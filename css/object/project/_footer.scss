@@ -15,6 +15,9 @@
         li {
             margin: 0 15px;
             position: relative;
+            a{
+                color: #fff;
+            }
         }
         li:first-child::after {
             content: "";
