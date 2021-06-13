@@ -2,6 +2,9 @@
 .p-single-wrapper{
    padding: 60px 100px;
    color: #3C2A10;
+   h2,h3,h4.h5,h6,p{
+      padding: 30px 0;
+   }
    @include tab{
       padding: 60px;
    };
