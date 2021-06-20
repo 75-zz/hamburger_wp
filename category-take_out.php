@@ -40,35 +40,6 @@ Template Name:take_out
   endif;
   wp_reset_postdata();
 ?>
-<?php /* ?>
-    <article class="c-cards">
-        <img src="<?php bloginfo('template_directory'); ?>/img/archive-fig-img.png" alt="ハンバーガー">
-        <div class="c-cards__textarea">
-            <h3>チーズバーガー</h3>
-            <h4>小見出しが入ります</h4>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <button>詳しく見る</button>
-        </div>
-    </article>
-    <article class="c-cards">
-        <img src="img/archive-fig-img.png" alt="ハンバーガー">
-        <div class="c-cards__textarea">
-            <h3>ダブルチーズバーガー</h3>
-            <h4>小見出しが入ります</h4>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <button>詳しく見る</button>
-        </div>
-    </article>
-    <article class="c-cards">
-        <img src="img/archive-fig-img.png" alt="ハンバーガー">
-        <div class="c-cards__textarea">
-            <h3>スペシャルチーズバーガー</h3>
-            <h4>小見出しが入ります</h4>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <button>詳しく見る</button>
-        </div>
-    </article>
-    <?php */ ?>
 </section>
 <section class="c-pagination">
         <?php

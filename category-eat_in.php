@@ -37,50 +37,6 @@ Template Name:eat_in
   endif;
   wp_reset_postdata();
 ?>
-<?php /* ?>
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <article class="c-cards">
-                <?php if (has_post_thumbnail()) : ?>
-                    <img class="blog-item__thumbnail-image" src="<?php the_post_thumbnail_url('large'); ?>">
-                <?php endif; ?>
-                <div class="c-cards__textarea">
-                    <h3><?php the_title(); ?></h3>
-                    <h4><?php the_excerpt(); ?></h4>
-                    <p><?php the_content('', FALSE, ''); ?></p>
-                    <button><a href="<?php the_permalink(); ?>">詳しく見る</a> </button>
-                </div>
-            </article>
-    <?php endwhile;
-    endif; ?>
-
-    <article class="c-cards">
-        <img src="<?php bloginfo('template_directory'); ?>/img/archive-fig-img.png" alt="ハンバーガー">
-        <div class="c-cards__textarea">
-            <h3>チーズバーガー</h3>
-            <h4>小見出しが入ります</h4>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <button>詳しく見る</button>
-        </div>
-    </article>
-    <article class="c-cards">
-        <img src="img/archive-fig-img.png" alt="ハンバーガー">
-        <div class="c-cards__textarea">
-            <h3>ダブルチーズバーガー</h3>
-            <h4>小見出しが入ります</h4>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <button>詳しく見る</button>
-        </div>
-    </article>
-    <article class="c-cards">
-        <img src="img/archive-fig-img.png" alt="ハンバーガー">
-        <div class="c-cards__textarea">
-            <h3>スペシャルチーズバーガー</h3>
-            <h4>小見出しが入ります</h4>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <button>詳しく見る</button>
-        </div>
-    </article>
-    <?php */ ?>
 
 </section>
 <section class="c-pagination">
