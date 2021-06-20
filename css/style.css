@@ -1670,4 +1670,94 @@ height: 104px;
   .p-single-wrapper {
     padding: 20px;
   }
+  .p-single-wrapper h2,h3,h4,h5,h6,p {
+    margin-bottom: 30px;
+  }
+  .p-single-wrapper blockquote {
+    padding: 30px;
+    background-color: #F5F5F5;
+    margin-bottom: 30px;
+  }
+  .p-single-wrapper .wp-block-image{
+    width: 335px;
+    height: 124px;
+    margin-bottom: 30px;
+  }
+
+  .p-single-wrapper .wp-block-media-text{
+    height: 176px;
+    margin-bottom: 30px;
+  }
+  
+  .p-single-wrapper .wp-block-media-text__media{
+    height: 89px;
+    margin-top: -20px;
+    width: 42%;
+  }
+
+  .p-single-wrapper .wp-block-media-text__content{
+    height: 176px;
+    overflow: hidden;
+    width: 55%;
+  }
+
+  .p-single-wrapper .wp-block-image {
+    width: 267px;
+    height: 166px;
+    margin: 0 auto 30px;
+  }
+
+  .p-single-wrapper .wp-block-gallery{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .p-single-wrapper .blocks-gallery-grid{
+    margin: 0;
+  }
+
+  .p-single-wrapper .wp-block-gallery .blocks-gallery-item{
+    width: 319px;
+    margin: 10px 10px;
+  }
+
+  .p-single-wrapper .blocks-gallery-item figure {
+    width: 319px;
+  }
+
+  .p-single-wrapper ol li{
+    list-style-type: decimal;
+  }
+
+  .p-single-wrapper ol{
+    margin: 23px 0 23px 33px;
+  }
+
+  .p-single-wrapper ul{
+    margin: 23px 0 23px 13px;
+  }
+
+  .p-single-wrapper ol ol,.p-single-wrapper ul ul{
+    margin-top: 23px;
+  }
+
+  .wp-block-button {
+    border: 1px solid #707070;
+    border-radius: 30px;
+    height: 81px;
+    width: 335px;
+    margin: 30px 0;
+  }
+  
+  .wp-block-button a{
+  padding-top: 24px;
+  width: 335px;
+  height: 81px;
+  }
+
+  .p-single-wrapper p strong{
+    margin: 30px 0;
+  }
+
+
 }
