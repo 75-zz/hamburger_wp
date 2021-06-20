@@ -5,7 +5,7 @@
                     <nav>
                         <ul>
                         
-                        <?php wp_nav_menu(array('menu' => 'sidebar-nav')); ?>
+                        <?php wp_nav_menu(array('theme_location' => 'sidebar-nav')); ?>
                         </ul>
                     </nav>
                     <div class="overlay"></div>

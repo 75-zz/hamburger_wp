@@ -23,6 +23,23 @@ html {
 }
 
 
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
 *,
 ::before,
 ::after {
@@ -1130,6 +1147,27 @@ height: 104px;
   display: block;
   margin-top: 60px;
 }
+
+.p-pagelink{
+  display: flex;
+  justify-content: center;
+}
+.p-pagelink p{
+    font-size: 1.4rem;
+}
+.p-pagelink p span,.p-pagelink p a{
+  padding: 5px;
+  border: solid 2px #3B2A10;
+  margin: 0 3px;
+}
+.p-pagelink p span{
+      color: #fff7ef;
+      background-color: #3B2A10;
+}
+.p-pagelink p a{
+      color: #3B2A10;
+}
+
 /* Utility ------------ */
 
 @media screen {

@@ -1,8 +1,12 @@
 <?php
     //テーマサポート
-    add_theme_support( 'menus' );
+    register_nav_menus( array(
+        'sidebar-nav' => 'Sidebar Navigation',
+        'footer-nav' => 'Footer Navigation'
+    ));
     add_theme_support( 'title-tag' );
     add_theme_support('post-thumbnails');
+    add_theme_support( 'automatic-feed-links' );
 
     //タイトル出力
     function wpbeg_title( $title ) {
@@ -41,3 +45,6 @@ function post_has_archive($args, $post_type)
 }
 add_filter('register_post_type_args', 'post_has_archive', 10, 2);
 
+if ( ! isset( $content_width ) ) {
+    $content_width = 1920;
+}

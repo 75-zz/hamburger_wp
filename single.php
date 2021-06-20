@@ -6,7 +6,7 @@
 
 </div>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-<div class="p-single-wrapper">
+<div <?php post_class('p-single-wrapper'); ?>>
 
 <?php the_content(); ?>
 

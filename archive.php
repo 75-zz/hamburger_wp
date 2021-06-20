@@ -26,6 +26,9 @@
 
 </section>
 <section class="c-pagination">
+<div class="p-pagelink">
+    <?php wp_link_pages( 'before=<p>&after=</p>&next_or_number=number&pagelink= %' ); ?>
+</div>
         <?php
         $args = array(
             'mid_size' => 6,
