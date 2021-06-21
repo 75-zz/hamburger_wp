@@ -13,15 +13,17 @@
             <article class="c-cards">
                 <?php if (has_post_thumbnail()) : ?>
                     <img class="blog-item__thumbnail-image" src="<?php the_post_thumbnail_url('large'); ?>">
+                    <?php else: ?>
+                        
+<img alt="" src="<?php echo get_template_directory_uri(); ?>/img/archive-fig-img.png" />
                 <?php endif; ?>
                 <div class="c-cards__textarea">
                     <h3><?php if(mb_strlen($post->post_title)>20) {
-  $title= mb_substr($post->post_title,0,20) ;
-    echo $title . '...';
-  } else {
-    echo $post->post_title;
-  } ?></h3>
-                    <h4><?php the_excerpt(); ?></h4>
+                                $title= mb_substr($post->post_title,0,20) ;
+                                echo $title . '...';
+                                } else {
+                                echo $post->post_title;
+                                } ?></h3>
                     <p><?php the_content('', true, ''); ?></p>
                     <button><a href="<?php the_permalink(); ?>">詳しく見る</a> </button>
                 </div>
