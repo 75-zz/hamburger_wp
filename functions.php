@@ -48,3 +48,10 @@ add_filter('register_post_type_args', 'post_has_archive', 10, 2);
 if ( ! isset( $content_width ) ) {
     $content_width = 1920;
 }
+
+function SearchFilter($query) {
+    if ( !is_admin() && $query->is_main_query() && $query->is_search() ) {
+    $query->set( 'post_type', 'post' );
+    }
+    }
+    add_action( 'pre_get_posts','SearchFilter' );
