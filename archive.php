@@ -17,7 +17,7 @@
                 <div class="c-cards__textarea">
                     <h3><?php the_title(); ?></h3>
                     <h4><?php the_excerpt(); ?></h4>
-                    <p><?php the_content('', FALSE, ''); ?></p>
+                    <p><?php the_content('', true, ''); ?></p>
                     <button><a href="<?php the_permalink(); ?>">詳しく見る</a> </button>
                 </div>
             </article>

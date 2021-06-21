@@ -530,8 +530,8 @@ line-height: 1;
 
 .c-branch__textarea dl {
   background-color: rgba(255, 255, 255, 0.8);
-  height: 174px;
   margin-bottom: 20px;
+  padding-bottom: 10px;
   word-wrap: break-word;
   overflow:hidden;
 }
@@ -933,7 +933,8 @@ line-height: 1;
 
 .p-map .p-map-direction p {
   font-size: 1rem;
-  padding-top: 119px;
+  padding-top: 39px;
+  line-height: 2rem;
 }
 
 .p-map img {
@@ -1199,7 +1200,6 @@ height: 104px;
     padding: 10px 15px;
   }
   .c-branch__textarea dd {
-    height: 71px;
     padding: 0 15px;
     padding-bottom: 10px;
     line-height: 1.3rem;
@@ -1278,7 +1278,6 @@ height: 104px;
     width: 36px;
   }
   .c-branch__textarea dd {
-    height: 76px;
     word-wrap: break-word;
   }
   .c-bigImg {
@@ -1363,8 +1362,8 @@ height: 104px;
   .p-map .p-map-direction p {
     font-size: 0.87rem;
     font-weight: bold;
-    line-height: 2rem;
-    padding: 40px 0;
+    line-height: 1.9rem;
+    padding-top: 0;
   }
   .p-search-form {
     margin-bottom: 40px;
@@ -1562,7 +1561,6 @@ height: 104px;
     padding: 20px 10px;
   }
   .c-branch__textarea dd {
-    height: 71px;
     padding: 0 10px;
   }
   .c-pagination {
@@ -1687,9 +1685,9 @@ height: 104px;
     height: 100%;
   }
   .p-map .p-map-direction p {
-    height: 528px;
+    height: 518px;
     overflow: hidden;
-    padding-bottom: 51px;
+    padding-right: 0;
   }
   .p-search-form {
     display: flex;
