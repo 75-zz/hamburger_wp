@@ -15,7 +15,12 @@
                     <img class="blog-item__thumbnail-image" src="<?php the_post_thumbnail_url('large'); ?>">
                 <?php endif; ?>
                 <div class="c-cards__textarea">
-                    <h3><?php the_title(); ?></h3>
+                    <h3><?php if(mb_strlen($post->post_title)>20) {
+  $title= mb_substr($post->post_title,0,20) ;
+    echo $title . '...';
+  } else {
+    echo $post->post_title;
+  } ?></h3>
                     <h4><?php the_excerpt(); ?></h4>
                     <p><?php the_content('', true, ''); ?></p>
                     <button><a href="<?php the_permalink(); ?>">詳しく見る</a> </button>
