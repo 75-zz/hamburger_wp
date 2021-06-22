@@ -24,7 +24,7 @@
                                 } else {
                                 echo $post->post_title;
                                 } ?></h3>
-                    <p><?php the_content('', true, ''); ?></p>
+                    <p><?php echo wp_trim_words( get_the_content(), 30 , '…' ); ?></p>
                     <button><a href="<?php the_permalink(); ?>">詳しく見る</a> </button>
                 </div>
             </article>
@@ -35,16 +35,16 @@
 <section class="c-pagination">
 <div class="p-pagelink">
     <?php wp_link_pages( 'before=<p>&after=</p>&next_or_number=number&pagelink= %' ); ?>
-</div>
         <?php
         $args = array(
-            'mid_size' => 6,
+            'mid_size' => 3,
             'prev_text' => '&lt;&lt;',
             'next_text' => '&gt;&gt;',
             'screen_reader_text' => ' ',
         );
         the_posts_pagination($args);
-        ?>
+
+        ?></div>
 </section>
 </main>
 <?php get_sidebar(); ?>

@@ -57,6 +57,6 @@ function SearchFilter($query) {
 add_action( 'pre_get_posts','SearchFilter' );
 
 function custom_excerpt_length( $length ) {
-    return 15;	
+    return 10;	
 }	
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

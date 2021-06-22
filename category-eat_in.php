@@ -40,15 +40,19 @@ Template Name:eat_in
 
 </section>
 <section class="c-pagination">
+<div class="p-pagelink">
+    <?php wp_link_pages( 'before=<p>&after=</p>&next_or_number=number&pagelink= %' ); ?>
         <?php
         $args = array(
-            'mid_size' => 6,
+            'mid_size' => 3,
             'prev_text' => '&lt;&lt;',
             'next_text' => '&gt;&gt;',
             'screen_reader_text' => ' ',
         );
         the_posts_pagination($args);
-        ?>
+
+        ?></div>
+</section>
 </section>
 </main>
 <?php get_sidebar(); ?>
