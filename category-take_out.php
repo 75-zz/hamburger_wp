@@ -31,8 +31,7 @@ Template Name:take_out
                 <?php endif; ?>
                 <div class="c-cards__textarea">
                     <h3><?php the_title(); ?></h3>
-                    <h4><?php the_excerpt(); ?></h4>
-                    <p><?php the_content('', FALSE, ''); ?></p>
+                    <p><?php echo wp_trim_words( get_the_content(), 30 , '…' ); ?></p>
                     <button><a href="<?php the_permalink(); ?>">詳しく見る</a> </button>
       </article>
 <?php endforeach; ?>

@@ -1546,6 +1546,10 @@ height: 104px;
     padding: 30.5px 17px 0;
     width: 100%;
   }
+  .c-cards button {
+    margin: 45px auto;
+    text-align: center;
+  }
   .c-branch__card {
     height: 642px;
     margin-bottom: 20px;
